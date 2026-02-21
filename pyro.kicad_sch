@@ -957,18 +957,16 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Simulation_SPICE:NMOS"
-			(pin_numbers
-				(hide yes)
-			)
+		(symbol "Transistor_FET:DMN2040U"
 			(pin_names
 				(offset 0)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "Q"
-				(at 5.08 1.27 0)
+				(at 5.08 1.905 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -976,8 +974,8 @@
 					(justify left)
 				)
 			)
-			(property "Value" "NMOS"
-				(at 5.08 -1.27 0)
+			(property "Value" "DMN2040U"
+				(at 5.08 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -985,25 +983,28 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" ""
-				(at 5.08 2.54 0)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+				(at 5.08 -1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMN2040U.pdf"
+				(at 5.08 -3.81 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
-				(at 0 -12.7 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "N-MOSFET transistor, drain/source/gate"
+			(property "Description" "20V Vds, 6A Id, N-Channel MOSFET, SOT-23"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1012,34 +1013,7 @@
 					(hide yes)
 				)
 			)
-			(property "Sim.Device" "NMOS"
-				(at 0 -17.145 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Type" "VDMOS"
-				(at 0 -19.05 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Pins" "1=D 2=G 3=S"
-				(at 0 -15.24 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "transistor NMOS N-MOS N-MOSFET simulation"
+			(property "ki_keywords" "N-Channel MOSFET"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1048,7 +1022,16 @@
 					(hide yes)
 				)
 			)
-			(symbol "NMOS_0_1"
+			(property "ki_fp_filters" "SOT?23*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "DMN2040U_0_1"
 				(polyline
 					(pts
 						(xy 0.254 1.905) (xy 0.254 -1.905)
@@ -1192,7 +1175,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.794 0.508) (xy 2.921 0.381) (xy 3.683 0.381) (xy 3.81 0.254)
+						(xy 2.921 0.381) (xy 3.683 0.381)
 					)
 					(stroke
 						(width 0)
@@ -1215,7 +1198,7 @@
 					)
 				)
 			)
-			(symbol "NMOS_1_1"
+			(symbol "DMN2040U_1_1"
 				(pin input line
 					(at -5.08 0 0)
 					(length 2.54)
@@ -1226,7 +1209,7 @@
 							)
 						)
 					)
-					(number "2"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1244,7 +1227,7 @@
 							)
 						)
 					)
-					(number "1"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1262,7 +1245,7 @@
 							)
 						)
 					)
-					(number "3"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2285,12 +2268,6 @@
 		(uuid "176caa3f-bca6-4263-8f04-0a5ee61fc4f3")
 	)
 	(junction
-		(at 140.97 138.43)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "226307b8-8852-43d9-999b-17314ed6cd2d")
-	)
-	(junction
 		(at 135.89 129.54)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2315,6 +2292,18 @@
 		(uuid "93229b97-bef1-472e-9ba6-2afa39280a29")
 	)
 	(junction
+		(at 140.97 138.43)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a175599d-0132-4702-a494-379bd052718f")
+	)
+	(junction
+		(at 113.03 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a4061336-6a36-4240-ab20-d09f5b7ebd78")
+	)
+	(junction
 		(at 87.63 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2327,10 +2316,22 @@
 		(uuid "af16e778-bd76-402d-b93b-53973d6fcc01")
 	)
 	(junction
+		(at 66.04 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b5956521-4f63-424a-8199-d45459d8a46f")
+	)
+	(junction
 		(at 153.67 34.29)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c671c7ca-b0e2-44af-9ad0-69b4cda3c3f9")
+	)
+	(junction
+		(at 160.02 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e21feb3a-0daf-4df8-b31d-48fec30ad42a")
 	)
 	(junction
 		(at 181.61 80.01)
@@ -2446,13 +2447,23 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 91.44) (xy 107.95 91.44)
+			(xy 104.14 91.44) (xy 106.68 91.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "0bbf0d71-5db5-4c71-b0f1-e052d8a3c1eb")
+	)
+	(wire
+		(pts
+			(xy 158.75 91.44) (xy 160.02 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0dcc2465-8502-4b97-9bcf-17798e43e87c")
 	)
 	(polyline
 		(pts
@@ -2486,6 +2497,16 @@
 	)
 	(wire
 		(pts
+			(xy 111.76 91.44) (xy 113.03 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17828405-f3a4-44f4-92bb-d7c37ddb5a90")
+	)
+	(wire
+		(pts
 			(xy 132.08 138.43) (xy 134.62 138.43)
 		)
 		(stroke
@@ -2504,16 +2525,6 @@
 		)
 		(uuid "229eb683-349a-40be-9382-6902f6ed1696")
 	)
-	(wire
-		(pts
-			(xy 167.64 96.52) (xy 167.64 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "23cd5775-a073-4d66-be79-a8132d5ecff8")
-	)
 	(polyline
 		(pts
 			(xy 61.341 33.655) (xy 63.881 33.655)
@@ -2523,6 +2534,16 @@
 			(type default)
 		)
 		(uuid "2594c4dd-cd8a-48ae-aea6-f7f93fc166ef")
+	)
+	(wire
+		(pts
+			(xy 66.04 92.71) (xy 66.04 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29e453b5-03a9-4c28-aac1-4bf8a3835ff5")
 	)
 	(wire
 		(pts
@@ -2586,7 +2607,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 91.44) (xy 154.94 91.44)
+			(xy 152.4 91.44) (xy 153.67 91.44)
 		)
 		(stroke
 			(width 0)
@@ -2603,6 +2624,16 @@
 			(type default)
 		)
 		(uuid "45bace69-aec2-4373-9bab-0c7ba77b3769")
+	)
+	(wire
+		(pts
+			(xy 160.02 92.71) (xy 160.02 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47042501-8333-4f7a-9db1-1541d7447d6f")
 	)
 	(wire
 		(pts
@@ -2894,6 +2925,16 @@
 		)
 		(uuid "8865cb68-e183-4126-a42b-9c77a3b1836d")
 	)
+	(wire
+		(pts
+			(xy 167.64 97.79) (xy 167.64 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ac893f3-53f0-4bac-9bef-32e3641a91ba")
+	)
 	(polyline
 		(pts
 			(xy 87.376 39.37) (xy 87.376 41.275)
@@ -2903,6 +2944,16 @@
 			(type default)
 		)
 		(uuid "8e155573-cbb7-4339-8ac5-abeb440ccc75")
+	)
+	(wire
+		(pts
+			(xy 113.03 92.71) (xy 113.03 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8fbcccac-bccb-4255-9092-8ce8849445ed")
 	)
 	(wire
 		(pts
@@ -3006,16 +3057,6 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 96.52) (xy 120.65 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b5dbb8d7-edc6-454f-b388-04a19a62f008")
-	)
-	(wire
-		(pts
 			(xy 127 85.09) (xy 127 86.36)
 		)
 		(stroke
@@ -3076,6 +3117,16 @@
 	)
 	(wire
 		(pts
+			(xy 64.77 91.44) (xy 66.04 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d621b9da-5a9e-42cc-b2e9-60cfa3b416e3")
+	)
+	(wire
+		(pts
 			(xy 148.59 129.54) (xy 148.59 133.35)
 		)
 		(stroke
@@ -3126,16 +3177,6 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 96.52) (xy 73.66 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ec2ed0b2-2bfe-4816-8c39-f59032bae6c2")
-	)
-	(wire
-		(pts
 			(xy 134.62 91.44) (xy 134.62 93.98)
 		)
 		(stroke
@@ -3143,6 +3184,16 @@
 			(type default)
 		)
 		(uuid "ed4a3e83-6c1a-4007-9745-bcc9cb20a292")
+	)
+	(wire
+		(pts
+			(xy 73.66 97.79) (xy 73.66 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eebf8daa-98b0-43a3-921e-b35ae23a4d28")
 	)
 	(wire
 		(pts
@@ -3163,6 +3214,16 @@
 			(type default)
 		)
 		(uuid "f3cfa768-80db-4e9c-82fe-19b839732a4f")
+	)
+	(wire
+		(pts
+			(xy 120.65 97.79) (xy 120.65 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3d2149b-b37e-4d1e-a8f3-3bb9dbfa0911")
 	)
 	(polyline
 		(pts
@@ -3186,7 +3247,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 91.44) (xy 60.96 91.44)
+			(xy 58.42 91.44) (xy 59.69 91.44)
 		)
 		(stroke
 			(width 0)
@@ -3544,6 +3605,82 @@
 		)
 	)
 	(symbol
+		(lib_id "Transistor_FET:DMN2040U")
+		(at 71.12 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0efc2047-c0b9-4416-8d9b-46e3019f6ceb")
+		(property "Reference" "Q6"
+			(at 77.47 90.1699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "DMN2040U"
+			(at 77.47 92.7099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 76.2 93.345 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMN2040U.pdf"
+			(at 76.2 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "20V Vds, 6A Id, N-Channel MOSFET, SOT-23"
+			(at 71.12 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "7f3ffcbb-5e02-4da0-8f6d-e0827d8c4b44")
+		)
+		(pin "2"
+			(uuid "4a0cb3ba-d3bc-457d-8129-fb5fe53344dc")
+		)
+		(pin "1"
+			(uuid "56a0ccba-ca79-4ee1-9cf3-b438936902a3")
+		)
+		(instances
+			(project "TABv1"
+				(path "/105f6e80-8e20-4d56-8eb3-6fa826818670/0e3bb754-11c8-4798-b0c5-c918ad2a10b9"
+					(reference "Q6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x03_Socket")
 		(at 73.66 130.81 0)
 		(unit 1)
@@ -3715,7 +3852,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 167.64 102.87 0)
+		(at 160.02 97.79 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3724,7 +3861,7 @@
 		(fields_autoplaced yes)
 		(uuid "34d57b67-5a4a-4108-b074-d0231b480675")
 		(property "Reference" "#PWR063"
-			(at 167.64 109.22 0)
+			(at 160.02 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3733,7 +3870,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 167.64 107.95 0)
+			(at 160.02 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3741,7 +3878,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 167.64 102.87 0)
+			(at 160.02 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3750,7 +3887,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 167.64 102.87 0)
+			(at 160.02 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3759,7 +3896,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 167.64 102.87 0)
+			(at 160.02 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3850,7 +3987,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 73.66 102.87 0)
+		(at 66.04 97.79 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3859,7 +3996,7 @@
 		(fields_autoplaced yes)
 		(uuid "36a132e0-3d50-44e1-ad21-a6944b41c74f")
 		(property "Reference" "#PWR061"
-			(at 73.66 109.22 0)
+			(at 66.04 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3868,7 +4005,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 73.66 107.95 0)
+			(at 66.04 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3876,7 +4013,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 102.87 0)
+			(at 66.04 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3885,7 +4022,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 102.87 0)
+			(at 66.04 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3894,7 +4031,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 73.66 102.87 0)
+			(at 66.04 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4199,6 +4336,82 @@
 		)
 	)
 	(symbol
+		(lib_id "Transistor_FET:DMN2040U")
+		(at 146.05 138.43 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "497cbde8-fe50-40dd-bb60-98a635c1a567")
+		(property "Reference" "Q5"
+			(at 152.4 137.1599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "DMN2040U"
+			(at 152.4 139.6999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 151.13 140.335 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMN2040U.pdf"
+			(at 151.13 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "20V Vds, 6A Id, N-Channel MOSFET, SOT-23"
+			(at 146.05 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "7baa26a9-cf06-495d-ae03-31556bde482a")
+		)
+		(pin "2"
+			(uuid "f24164d3-7db1-4970-bdef-97aba5cfac6d")
+		)
+		(pin "1"
+			(uuid "9a7c6ac0-ee7a-4c97-8cac-027ee6b6ed82")
+		)
+		(instances
+			(project "TABv1"
+				(path "/105f6e80-8e20-4d56-8eb3-6fa826818670/0e3bb754-11c8-4798-b0c5-c918ad2a10b9"
+					(reference "Q5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 140.97 146.05 0)
 		(unit 1)
@@ -4266,7 +4479,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 167.64 100.33 180)
+		(at 160.02 95.25 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4274,7 +4487,7 @@
 		(dnp no)
 		(uuid "52218890-5880-4fb2-9344-f51e9b443bd7")
 		(property "Reference" "R33"
-			(at 168.91 99.568 0)
+			(at 161.29 94.488 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -4283,7 +4496,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 168.656 101.6 0)
+			(at 161.036 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4292,7 +4505,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 167.64 100.33 0)
+			(at 160.02 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4301,7 +4514,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 167.64 100.33 0)
+			(at 160.02 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4310,7 +4523,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 167.64 100.33 0)
+			(at 160.02 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4334,16 +4547,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:NMOS")
-		(at 71.12 91.44 0)
+		(lib_id "Transistor_FET:DMN2040U")
+		(at 165.1 91.44 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "639f137b-9e3b-4126-8c05-3f3a28f00de7")
-		(property "Reference" "Q6"
-			(at 66.294 84.582 0)
+		(fields_autoplaced yes)
+		(uuid "53aac36d-1ff3-4a38-a710-fbd632c4e65d")
+		(property "Reference" "Q2"
+			(at 171.45 90.1699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4351,8 +4565,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NMOS"
-			(at 66.294 87.122 0)
+		(property "Value" "DMN2040U"
+			(at 171.45 92.7099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4360,73 +4574,49 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering"
-			(at 76.2 88.9 0)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 170.18 93.345 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMN2040U.pdf"
+			(at 170.18 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "20V Vds, 6A Id, N-Channel MOSFET, SOT-23"
+			(at 165.1 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
-			(at 71.12 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "N-MOSFET transistor, drain/source/gate"
-			(at 71.12 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "NMOS"
-			(at 71.12 108.585 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" "VDMOS"
-			(at 71.12 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 71.12 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "21ee56c7-1ef2-4dbe-8bdf-820bae6be0f1")
 		)
 		(pin "3"
-			(uuid "88c474a0-2658-444f-9041-fd19de50d770")
+			(uuid "77dfbc6b-f1e1-4266-a1fb-b23b7ed6e721")
 		)
 		(pin "2"
-			(uuid "eb91175d-1b6c-43fc-b81c-56c0bb7657fd")
+			(uuid "812b565c-8ad6-4eb8-93de-2593698373ad")
+		)
+		(pin "1"
+			(uuid "ed41c108-da28-4581-811c-13ad3b91cea6")
 		)
 		(instances
-			(project "cockatiel"
+			(project "TABv1"
 				(path "/105f6e80-8e20-4d56-8eb3-6fa826818670/0e3bb754-11c8-4798-b0c5-c918ad2a10b9"
-					(reference "Q6")
+					(reference "Q2")
 					(unit 1)
 				)
 			)
@@ -4434,7 +4624,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 63.5 91.44 90)
+		(at 62.23 91.44 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4443,15 +4633,15 @@
 		(fields_autoplaced yes)
 		(uuid "64669ea2-4b46-49d9-aa88-3e4f1a599548")
 		(property "Reference" "R27"
-			(at 63.5 86.36 90)
+			(at 62.23 86.36 90)
 			(effects
 				(font
 					(size 1.016 1.016)
 				)
 			)
 		)
-		(property "Value" "1k"
-			(at 63.5 88.9 90)
+		(property "Value" "100"
+			(at 62.23 88.9 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4459,7 +4649,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 63.5 91.44 0)
+			(at 62.23 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4468,7 +4658,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 63.5 91.44 0)
+			(at 62.23 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4477,7 +4667,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 63.5 91.44 0)
+			(at 62.23 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4833,6 +5023,82 @@
 		)
 	)
 	(symbol
+		(lib_id "Transistor_FET:DMN2040U")
+		(at 118.11 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7d7b036e-b0c0-4b51-be96-3097ebe6df4b")
+		(property "Reference" "Q7"
+			(at 124.46 90.1699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "DMN2040U"
+			(at 124.46 92.7099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 123.19 93.345 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMN2040U.pdf"
+			(at 123.19 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "20V Vds, 6A Id, N-Channel MOSFET, SOT-23"
+			(at 118.11 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "d8b2326e-1e8c-485c-8f47-2fe9f1b7ecb7")
+		)
+		(pin "2"
+			(uuid "3c673178-7095-427b-a131-2dc43df94857")
+		)
+		(pin "1"
+			(uuid "6b55407f-3e79-48b8-8f5d-9f1d65fa3db9")
+		)
+		(instances
+			(project "TABv1"
+				(path "/105f6e80-8e20-4d56-8eb3-6fa826818670/0e3bb754-11c8-4798-b0c5-c918ad2a10b9"
+					(reference "Q7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 140.97 143.51 180)
 		(unit 1)
@@ -4896,105 +5162,6 @@
 			(project "cockatiel"
 				(path "/105f6e80-8e20-4d56-8eb3-6fa826818670/0e3bb754-11c8-4798-b0c5-c918ad2a10b9"
 					(reference "R19")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Simulation_SPICE:NMOS")
-		(at 165.1 91.44 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "7e995348-16f7-4334-a9bf-bfed3a4a1747")
-		(property "Reference" "Q8"
-			(at 160.274 84.582 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "NMOS"
-			(at 160.274 87.122 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering"
-			(at 170.18 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
-			(at 165.1 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "N-MOSFET transistor, drain/source/gate"
-			(at 165.1 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "NMOS"
-			(at 165.1 108.585 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" "VDMOS"
-			(at 165.1 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 165.1 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "07680b84-209c-4d1d-a69d-ad111565f585")
-		)
-		(pin "3"
-			(uuid "bbb4296b-791d-4c3e-9869-54c9f7fca7c9")
-		)
-		(pin "2"
-			(uuid "c5b4c41e-a5f3-48a7-9a14-b9cc25359cd1")
-		)
-		(instances
-			(project "cockatiel"
-				(path "/105f6e80-8e20-4d56-8eb3-6fa826818670/0e3bb754-11c8-4798-b0c5-c918ad2a10b9"
-					(reference "Q8")
 					(unit 1)
 				)
 			)
@@ -5071,16 +5238,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 120.65 102.87 0)
+		(at 73.66 97.79 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "887f4f97-fbc4-40d8-9192-168bab6b8baf")
-		(property "Reference" "#PWR062"
-			(at 120.65 109.22 0)
+		(uuid "8431f401-e780-4ae5-a548-4f77b3cdf39f")
+		(property "Reference" "#PWR0137"
+			(at 73.66 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5089,7 +5256,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 120.65 107.95 0)
+			(at 73.66 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5097,7 +5264,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 120.65 102.87 0)
+			(at 73.66 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5106,7 +5273,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 120.65 102.87 0)
+			(at 73.66 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5115,7 +5282,73 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 120.65 102.87 0)
+			(at 73.66 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "58938baf-881c-4847-8a3d-8ff0521e3d79")
+		)
+		(instances
+			(project "TABv1"
+				(path "/105f6e80-8e20-4d56-8eb3-6fa826818670/0e3bb754-11c8-4798-b0c5-c918ad2a10b9"
+					(reference "#PWR0137")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 113.03 97.79 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "887f4f97-fbc4-40d8-9192-168bab6b8baf")
+		(property "Reference" "#PWR062"
+			(at 113.03 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 113.03 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 113.03 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 113.03 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 113.03 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5136,34 +5369,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:NMOS")
-		(at 118.11 91.44 0)
+		(lib_id "power:GND")
+		(at 120.65 97.79 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "9238d793-2b8e-406a-9b5f-ccd4c74cf69f")
-		(property "Reference" "Q7"
-			(at 113.284 84.582 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "NMOS"
-			(at 113.284 87.122 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering"
-			(at 123.19 88.9 0)
+		(fields_autoplaced yes)
+		(uuid "90c68dd8-9ff0-4dd0-8b26-94b13e5b7a8b")
+		(property "Reference" "#PWR064"
+			(at 120.65 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5171,8 +5387,16 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
-			(at 118.11 104.14 0)
+		(property "Value" "GND"
+			(at 120.65 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 120.65 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5180,8 +5404,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "N-MOSFET transistor, drain/source/gate"
-			(at 118.11 91.44 0)
+		(property "Datasheet" ""
+			(at 120.65 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5189,26 +5413,8 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Device" "NMOS"
-			(at 118.11 108.585 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" "VDMOS"
-			(at 118.11 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 118.11 106.68 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 120.65 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5217,18 +5423,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "b0f97a36-9258-475b-8676-f6e78f7374f9")
-		)
-		(pin "3"
-			(uuid "a13f4b4e-4057-4755-af62-bea9357298c3")
-		)
-		(pin "2"
-			(uuid "918db1cf-b5ff-41a0-b88c-b938d9a6a5a1")
+			(uuid "83cc57e6-3921-40fe-92b4-aeea4d983680")
 		)
 		(instances
-			(project "cockatiel"
+			(project "TABv1"
 				(path "/105f6e80-8e20-4d56-8eb3-6fa826818670/0e3bb754-11c8-4798-b0c5-c918ad2a10b9"
-					(reference "Q7")
+					(reference "#PWR064")
 					(unit 1)
 				)
 			)
@@ -5236,7 +5436,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 157.48 91.44 90)
+		(at 156.21 91.44 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5245,15 +5445,15 @@
 		(fields_autoplaced yes)
 		(uuid "98d99895-7952-4b2d-a502-ea21c9b0fb19")
 		(property "Reference" "R32"
-			(at 157.48 86.36 90)
+			(at 156.21 86.36 90)
 			(effects
 				(font
 					(size 1.016 1.016)
 				)
 			)
 		)
-		(property "Value" "1k"
-			(at 157.48 88.9 90)
+		(property "Value" "100"
+			(at 156.21 88.9 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5261,7 +5461,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 157.48 91.44 0)
+			(at 156.21 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5270,7 +5470,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 157.48 91.44 0)
+			(at 156.21 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5279,7 +5479,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 157.48 91.44 0)
+			(at 156.21 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5508,7 +5708,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 110.49 91.44 90)
+		(at 109.22 91.44 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5517,15 +5717,15 @@
 		(fields_autoplaced yes)
 		(uuid "c3dff140-626e-4a8b-90f7-5c82762ed3e6")
 		(property "Reference" "R30"
-			(at 110.49 86.36 90)
+			(at 109.22 86.36 90)
 			(effects
 				(font
 					(size 1.016 1.016)
 				)
 			)
 		)
-		(property "Value" "1k"
-			(at 110.49 88.9 90)
+		(property "Value" "100"
+			(at 109.22 88.9 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5533,7 +5733,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 110.49 91.44 0)
+			(at 109.22 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5542,7 +5742,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 110.49 91.44 0)
+			(at 109.22 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5551,7 +5751,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 110.49 91.44 0)
+			(at 109.22 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5575,106 +5775,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:NMOS")
-		(at 146.05 138.43 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c66d13d3-a788-457d-95bb-e2bdbabdf579")
-		(property "Reference" "Q5"
-			(at 152.4 137.1599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "NMOS"
-			(at 152.4 139.6999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering"
-			(at 151.13 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
-			(at 146.05 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "N-MOSFET transistor, drain/source/gate"
-			(at 146.05 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "NMOS"
-			(at 146.05 155.575 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" "VDMOS"
-			(at 146.05 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 146.05 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4d7b9d77-aaa1-4aa7-a2ef-1bd714b5fcc4")
-		)
-		(pin "3"
-			(uuid "e7b7a7d7-6930-421e-bf3e-a51d500a0046")
-		)
-		(pin "2"
-			(uuid "af9be73c-ed5f-4d1d-9d6a-0df8a848b284")
-		)
-		(instances
-			(project "cockatiel"
-				(path "/105f6e80-8e20-4d56-8eb3-6fa826818670/0e3bb754-11c8-4798-b0c5-c918ad2a10b9"
-					(reference "Q5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small")
 		(at 137.16 138.43 90)
 		(unit 1)
@@ -5692,7 +5792,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "100"
 			(at 137.16 135.89 90)
 			(effects
 				(font
@@ -5811,7 +5911,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 120.65 100.33 180)
+		(at 113.03 95.25 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5819,7 +5919,7 @@
 		(dnp no)
 		(uuid "d9d97756-8459-405d-a6ce-9895b6ea32ba")
 		(property "Reference" "R31"
-			(at 121.92 99.568 0)
+			(at 114.3 94.488 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -5828,7 +5928,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 121.666 101.6 0)
+			(at 114.046 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5837,7 +5937,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 120.65 100.33 0)
+			(at 113.03 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5846,7 +5946,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 120.65 100.33 0)
+			(at 113.03 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5855,7 +5955,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 120.65 100.33 0)
+			(at 113.03 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5953,7 +6053,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 73.66 100.33 180)
+		(at 66.04 95.25 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5961,7 +6061,7 @@
 		(dnp no)
 		(uuid "ec24e2b1-1d0b-4bf3-ab89-ad6d5a0a2c32")
 		(property "Reference" "R28"
-			(at 74.93 99.568 0)
+			(at 67.31 94.488 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -5970,7 +6070,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 74.676 101.6 0)
+			(at 67.056 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5979,7 +6079,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 73.66 100.33 0)
+			(at 66.04 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5988,7 +6088,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 73.66 100.33 0)
+			(at 66.04 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5997,7 +6097,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 73.66 100.33 0)
+			(at 66.04 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6015,6 +6115,72 @@
 			(project "cockatiel"
 				(path "/105f6e80-8e20-4d56-8eb3-6fa826818670/0e3bb754-11c8-4798-b0c5-c918ad2a10b9"
 					(reference "R28")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 167.64 97.79 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ef3e7744-dac9-4b88-b4ea-774dc00f3436")
+		(property "Reference" "#PWR0136"
+			(at 167.64 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 167.64 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 167.64 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 167.64 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 167.64 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3f99155a-ba69-4749-ad13-042164b617ad")
+		)
+		(instances
+			(project "TABv1"
+				(path "/105f6e80-8e20-4d56-8eb3-6fa826818670/0e3bb754-11c8-4798-b0c5-c918ad2a10b9"
+					(reference "#PWR0136")
 					(unit 1)
 				)
 			)
