@@ -10945,7 +10945,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "usb_c:USB-C-TH_TYPEC-306DDW-ARP16"
+		(property "Footprint" "BXCONN UC23-0B16F00P11:USB-C-TH_UC23-0B16F00P11"
 			(at 236.22 153.67 0)
 			(effects
 				(font
@@ -12098,7 +12098,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_1206_3216Metric_Pad1.42x1.75mm_HandSolder"
+		(property "Footprint" "Inductor_SMD:L_1008_2520Metric"
 			(at 105.41 105.41 0)
 			(effects
 				(font

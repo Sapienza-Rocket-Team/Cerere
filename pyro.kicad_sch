@@ -3295,6 +3295,16 @@
 		)
 		(uuid "152741ab-1681-43d7-89e2-10cd0cf41514")
 	)
+	(label "PYRO2"
+		(at 58.42 128.27 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1a31ad34-0af2-4bbb-ba5c-90e4ee3d106a")
+	)
 	(label "PYRO_LOW"
 		(at 58.42 135.89 180)
 		(effects
@@ -3326,16 +3336,6 @@
 		(uuid "21cd8b13-61e2-4dc3-89c5-940da2a372a8")
 	)
 	(label "PYRO2"
-		(at 58.42 133.35 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "2475f500-fc7c-42c1-86a5-51a9e1738823")
-	)
-	(label "PYRO2"
 		(at 138.43 93.98 0)
 		(effects
 			(font
@@ -3354,6 +3354,16 @@
 			(justify right bottom)
 		)
 		(uuid "6f02dd88-6c6c-466e-b2bd-85648b71f370")
+	)
+	(label "PYRO1"
+		(at 58.42 133.35 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "7ca0abcc-9a66-4f1a-9428-9ae6fac87823")
 	)
 	(label "PYRO1"
 		(at 91.44 93.98 0)
@@ -3394,16 +3404,6 @@
 			(justify right bottom)
 		)
 		(uuid "e48c5550-0aa0-43f7-a93e-30b1e7ef3ef5")
-	)
-	(label "PYRO1"
-		(at 58.42 128.27 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "f782ece9-a81d-4ea8-8e13-225435833b8f")
 	)
 	(label "PYRO_LOW"
 		(at 148.59 124.46 0)

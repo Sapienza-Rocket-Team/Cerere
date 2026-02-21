@@ -24,4 +24,5 @@
   (lib (name "LM334MX")(type "KiCad")(uri "${KIPRJMOD}/lib/lm334/LM334MX.pretty")(options "")(descr ""))
   (lib (name "BC817-25")(type "KiCad")(uri "${KIPRJMOD}/lib/BC817-25/BC817-25.pretty")(options "")(descr ""))
   (lib (name "TYPEC-306DDW-ARP16")(type "KiCad")(uri "${KIPRJMOD}/lib/usb_c/TYPEC-306DDW-ARP16.pretty")(options "")(descr ""))
+  (lib (name "BXCONN UC23-0B16F00P11")(type "KiCad")(uri "${KIPRJMOD}/lib/BXCONN_UC23-0B16F00P11/BXCONN UC23-0B16F00P11.pretty")(options "")(descr ""))
 )
