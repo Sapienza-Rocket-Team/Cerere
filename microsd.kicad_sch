@@ -1247,12 +1247,6 @@
 		(uuid "11360012-3178-4962-b2e8-cc987bbb38a1")
 	)
 	(junction
-		(at 153.67 48.26)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "181a1673-0483-4d1c-9bf6-db6b6de8682a")
-	)
-	(junction
 		(at 142.24 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1263,12 +1257,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "327aee51-f567-44af-b1be-81e14ff8dc2d")
-	)
-	(junction
-		(at 134.62 48.26)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3f9db3e7-5275-44ad-b192-f5bba2b55e4e")
 	)
 	(junction
 		(at 129.54 58.42)
@@ -1347,6 +1335,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f404435e-4111-42fa-9130-1c55c4f4f293")
+	)
+	(junction
+		(at 153.67 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f415ebc1-83f6-40ec-a109-c7b497bdff98")
 	)
 	(no_connect
 		(at 147.32 74.93)
@@ -1582,17 +1576,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 48.26) (xy 153.67 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6371811b-da69-483f-b73e-070e5f22cbfa")
-	)
-	(wire
-		(pts
-			(xy 127 50.8) (xy 134.62 50.8)
+			(xy 127 50.8) (xy 132.08 50.8)
 		)
 		(stroke
 			(width 0)
@@ -1612,7 +1596,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 50.8) (xy 157.48 50.8)
+			(xy 153.67 48.26) (xy 157.48 48.26)
 		)
 		(stroke
 			(width 0)
@@ -1802,7 +1786,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 48.26) (xy 134.62 48.26)
+			(xy 127 48.26) (xy 153.67 48.26)
 		)
 		(stroke
 			(width 0)
@@ -1869,16 +1853,6 @@
 			(type default)
 		)
 		(uuid "cef1c847-fd22-4837-9fce-b0c257031221")
-	)
-	(wire
-		(pts
-			(xy 134.62 50.8) (xy 134.62 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cf64738f-99fb-4c84-9e34-41844bef0364")
 	)
 	(wire
 		(pts
@@ -1989,16 +1963,6 @@
 			(type default)
 		)
 		(uuid "e9cf178b-9b74-4e88-9043-a1c94f6b255d")
-	)
-	(wire
-		(pts
-			(xy 153.67 48.26) (xy 153.67 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f0c252d4-fc0c-469c-97c6-3e1e57056ab1")
 	)
 	(wire
 		(pts
@@ -2126,7 +2090,7 @@
 	)
 	(hierarchical_label "micros_sd_detect"
 		(shape input)
-		(at 157.48 50.8 0)
+		(at 157.48 48.26 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2650,6 +2614,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 153.67 40.64 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9a20be8b-a193-47c0-80c7-3bd8db0084d0")
+		(property "Reference" "#PWR0139"
+			(at 153.67 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 153.67 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 153.67 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 153.67 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 153.67 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dc8e7e70-51ce-423f-9201-e2a5bea0dde5")
+		)
+		(instances
+			(project "TABv1"
+				(path "/105f6e80-8e20-4d56-8eb3-6fa826818670/5f928ec3-de2c-45ad-87ae-24994ae19594"
+					(reference "#PWR0139")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "microSD_503398-1892:503398-1892")
 		(at 83.82 45.72 0)
 		(unit 1)
@@ -2962,7 +2992,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 157.48 48.26 270)
+		(at 153.67 44.45 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2970,7 +3000,7 @@
 		(dnp no)
 		(uuid "de7e4424-bd10-452d-81ce-9f324dce8168")
 		(property "Reference" "R40"
-			(at 157.48 46.228 90)
+			(at 151.638 44.45 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2978,7 +3008,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 157.48 48.26 90)
+			(at 153.67 44.45 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2986,7 +3016,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 157.48 46.482 90)
+			(at 151.892 44.45 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2995,7 +3025,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 157.48 48.26 0)
+			(at 153.67 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3004,7 +3034,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 157.48 48.26 0)
+			(at 153.67 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3184,7 +3214,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 161.29 48.26 270)
+		(at 132.08 50.8 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3193,7 +3223,7 @@
 		(fields_autoplaced yes)
 		(uuid "f4bc90e2-3b7a-4914-8de9-ef746a7f0913")
 		(property "Reference" "#PWR069"
-			(at 157.48 48.26 0)
+			(at 128.27 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3202,7 +3232,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 165.1 48.2599 90)
+			(at 135.89 50.7999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3211,7 +3241,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 161.29 48.26 0)
+			(at 132.08 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3220,7 +3250,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 161.29 48.26 0)
+			(at 132.08 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3229,7 +3259,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 161.29 48.26 0)
+			(at 132.08 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3241,7 +3271,7 @@
 			(uuid "ba25bfd7-3545-4460-aafc-e34603074736")
 		)
 		(instances
-			(project "cockatiel"
+			(project "TABv1"
 				(path "/105f6e80-8e20-4d56-8eb3-6fa826818670/5f928ec3-de2c-45ad-87ae-24994ae19594"
 					(reference "#PWR069")
 					(unit 1)
