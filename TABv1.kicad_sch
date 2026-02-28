@@ -579,27 +579,24 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector:TestPoint_Flag"
-			(pin_numbers
-				(hide yes)
-			)
+		(symbol "Connector:Conn_01x10_Socket"
 			(pin_names
-				(offset 0.762)
+				(offset 1.016)
 				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "TP"
-				(at 3.429 1.778 0)
+			(property "Reference" "J"
+				(at 0 12.7 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "TestPoint_Flag"
-				(at 3.302 4.191 0)
+			(property "Value" "Conn_01x10_Socket"
+				(at 0 -15.24 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -607,7 +604,7 @@
 				)
 			)
 			(property "Footprint" ""
-				(at 5.08 0 0)
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -616,15 +613,6 @@
 				)
 			)
 			(property "Datasheet" "~"
-				(at 5.08 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "test point (alternative flag-style design)"
 				(at 0 0 0)
 				(effects
 					(font
@@ -633,7 +621,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "test point tp"
+			(property "Description" "Generic connector, single row, 01x10, script generated"
 				(at 0 0 0)
 				(effects
 					(font
@@ -642,7 +630,15 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "Pin* Test*"
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
 				(at 0 0 0)
 				(effects
 					(font
@@ -651,36 +647,260 @@
 					(hide yes)
 				)
 			)
-			(symbol "TestPoint_Flag_0_1"
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x10_Socket_1_1"
 				(polyline
 					(pts
-						(xy 0 0) (xy 0.889 0.889)
+						(xy -1.27 10.16) (xy -0.508 10.16)
 					)
 					(stroke
-						(width 0.254)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
-				(rectangle
-					(start 0.889 2.794)
-					(end 5.842 0.889)
+				(polyline
+					(pts
+						(xy -1.27 7.62) (xy -0.508 7.62)
+					)
 					(stroke
-						(width 0.254)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
-						(type background)
+						(type none)
 					)
 				)
-			)
-			(symbol "TestPoint_Flag_1_1"
+				(polyline
+					(pts
+						(xy -1.27 5.08) (xy -0.508 5.08)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 2.54) (xy -0.508 2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy -0.508 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -2.54) (xy -0.508 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -5.08) (xy -0.508 -5.08)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -7.62) (xy -0.508 -7.62)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -10.16) (xy -0.508 -10.16)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -12.7) (xy -0.508 -12.7)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 9.652)
+					(mid -0.5058 10.16)
+					(end 0 10.668)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 7.112)
+					(mid -0.5058 7.62)
+					(end 0 8.128)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 4.572)
+					(mid -0.5058 5.08)
+					(end 0 5.588)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 2.032)
+					(mid -0.5058 2.54)
+					(end 0 3.048)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -0.508)
+					(mid -0.5058 0)
+					(end 0 0.508)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -3.048)
+					(mid -0.5058 -2.54)
+					(end 0 -2.032)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -5.588)
+					(mid -0.5058 -5.08)
+					(end 0 -4.572)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -8.128)
+					(mid -0.5058 -7.62)
+					(end 0 -7.112)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -10.668)
+					(mid -0.5058 -10.16)
+					(end 0 -9.652)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -13.208)
+					(mid -0.5058 -12.7)
+					(end 0 -12.192)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(pin passive line
-					(at 0 0 90)
-					(length 0)
-					(name "1"
+					(at -5.08 10.16 0)
+					(length 3.81)
+					(name "Pin_1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -688,6 +908,168 @@
 						)
 					)
 					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 7.62 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 5.08 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -5.08 0)
+					(length 3.81)
+					(name "Pin_7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -7.62 0)
+					(length 3.81)
+					(name "Pin_8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -10.16 0)
+					(length 3.81)
+					(name "Pin_9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -12.7 0)
+					(length 3.81)
+					(name "Pin_10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -7995,6 +8377,16 @@
 		)
 		(uuid "20b903d8-d74d-44df-8d08-e7cfc7e2153d")
 	)
+	(wire
+		(pts
+			(xy 31.75 137.16) (xy 35.56 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "20c45ffc-c402-41ef-85f2-c395c5012101")
+	)
 	(polyline
 		(pts
 			(xy 90.805 177.165) (xy 90.805 181.61)
@@ -8027,7 +8419,7 @@
 	)
 	(bus
 		(pts
-			(xy 312.42 172.72) (xy 327.66 172.72)
+			(xy 292.1 170.18) (xy 307.34 170.18)
 		)
 		(stroke
 			(width 0)
@@ -8125,6 +8517,16 @@
 		)
 		(uuid "29d68fe7-564e-48db-8198-db072de74325")
 	)
+	(wire
+		(pts
+			(xy 35.56 134.62) (xy 31.75 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ac1809e-9dc4-480a-b89d-e4797b7a1d73")
+	)
 	(polyline
 		(pts
 			(xy 126.365 62.23) (xy 126.365 71.755)
@@ -8214,6 +8616,16 @@
 			(type default)
 		)
 		(uuid "2f93e7ad-b821-4b87-a77d-959c4e7b2605")
+	)
+	(wire
+		(pts
+			(xy 31.75 139.7) (xy 35.56 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "301256fe-f32b-4c3d-bdc4-f904126e3d3c")
 	)
 	(wire
 		(pts
@@ -8497,6 +8909,16 @@
 	)
 	(wire
 		(pts
+			(xy 35.56 142.24) (xy 31.75 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f20be13-45ff-4e49-b1ff-fe9cafeaafd8")
+	)
+	(wire
+		(pts
 			(xy 354.33 135.89) (xy 369.57 135.89)
 		)
 		(stroke
@@ -8637,7 +9059,7 @@
 	)
 	(bus
 		(pts
-			(xy 312.42 158.75) (xy 327.66 158.75)
+			(xy 292.1 156.21) (xy 307.34 156.21)
 		)
 		(stroke
 			(width 0)
@@ -9704,6 +10126,16 @@
 			(type default)
 		)
 		(uuid "a09c9dc4-e19e-41fa-89cb-297de46fb63c")
+	)
+	(wire
+		(pts
+			(xy 35.56 132.08) (xy 31.75 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3010d52-aca6-4955-9e44-90428ba37f61")
 	)
 	(wire
 		(pts
@@ -11105,6 +11537,26 @@
 		)
 		(uuid "3755370d-55e4-4da9-b989-2726c0359f7c")
 	)
+	(label "UART1_RX_RADIO"
+		(at 35.56 132.08 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3d0e8d81-fd30-4a8d-91ea-0dbf47a611f7")
+	)
+	(label "SWDIO_RADIO"
+		(at 387.35 167.64 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3e642e0c-95f3-44ab-bb53-2c95c291f966")
+	)
 	(label "SCLK"
 		(at 39.37 88.9 0)
 		(effects
@@ -11146,7 +11598,7 @@
 		(uuid "44c8ac00-3a6e-4502-99be-b91fd37b432c")
 	)
 	(label "RX_GPS"
-		(at 382.27 165.1 0)
+		(at 387.35 161.29 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11215,6 +11667,16 @@
 		)
 		(uuid "4e3e4ddf-e165-4c32-a7ac-919b14cd6dfa")
 	)
+	(label "UART1_TX_RADIO"
+		(at 35.56 134.62 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4eac0728-ada0-4cc8-8fd4-7d81aa23718b")
+	)
 	(label "BARO_CS"
 		(at 148.59 137.16 180)
 		(effects
@@ -11244,6 +11706,16 @@
 			(justify left bottom)
 		)
 		(uuid "5c1e98b0-056e-4929-84e1-eae36abf39cb")
+	)
+	(label "SWDCLK_RADIO"
+		(at 387.35 170.18 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5f5a7858-c2db-413b-bbdd-1cf81c12a872")
 	)
 	(label "PWM2"
 		(at 148.59 127 0)
@@ -11315,6 +11787,16 @@
 		)
 		(uuid "6f95a62b-5431-403e-be2e-5bb340d948fd")
 	)
+	(label "SWDCLK_RADIO"
+		(at 35.56 139.7 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "727f6818-ffa3-4d65-8971-65a429fd0a61")
+	)
 	(label "L_BLUE"
 		(at 151.13 144.78 180)
 		(effects
@@ -11346,7 +11828,7 @@
 		(uuid "797b027f-1057-45af-a6ad-9eea09c71dc3")
 	)
 	(label "SCL_RADIO"
-		(at 365.76 171.45 180)
+		(at 354.33 167.64 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11384,6 +11866,16 @@
 			(justify left bottom)
 		)
 		(uuid "84052b3c-b901-4f9c-8c06-d74106f6f9df")
+	)
+	(label "UART1_RX_RADIO"
+		(at 354.33 163.83 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "84f8cba9-e815-4016-8ba2-1ceefe251a68")
 	)
 	(label "SD_CMD"
 		(at 148.59 71.12 180)
@@ -11466,7 +11958,7 @@
 		(uuid "8f2190f5-cd59-43f4-a5f2-ef7b4656b8f7")
 	)
 	(label "TX_GPS"
-		(at 382.27 167.64 0)
+		(at 387.35 163.83 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11505,6 +11997,16 @@
 		)
 		(uuid "971076d2-5002-49e8-8f96-a587a0629a5a")
 	)
+	(label "~{USB_BOOT}"
+		(at 35.56 142.24 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "97f2ce27-273f-463a-b429-48fc930c3719")
+	)
 	(label "SD_DAT3"
 		(at 354.33 121.92 0)
 		(effects
@@ -11516,7 +12018,7 @@
 		(uuid "98d8c1f2-e061-46bc-87b5-0c6bec4e53d6")
 	)
 	(label "{QSPI}"
-		(at 312.42 172.72 0)
+		(at 292.1 170.18 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11556,7 +12058,7 @@
 		(uuid "a28dd1e9-b43a-4b31-b56a-2a2d8e60a050")
 	)
 	(label "{VREG}"
-		(at 312.42 158.75 0)
+		(at 292.1 156.21 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11614,6 +12116,16 @@
 			(justify right bottom)
 		)
 		(uuid "aea19101-4dcd-4743-8bbe-3c3a8001e2e5")
+	)
+	(label "SWDIO_RADIO"
+		(at 35.56 137.16 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b0803f4d-a829-4788-aa42-36a465cd285a")
 	)
 	(label "SD0"
 		(at 39.37 77.47 0)
@@ -11706,7 +12218,7 @@
 		(uuid "d0988ee2-beac-4322-bd10-4e71e9b8c1a7")
 	)
 	(label "SDA_RADIO"
-		(at 365.76 173.99 180)
+		(at 354.33 170.18 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11736,7 +12248,7 @@
 		(uuid "d3e43469-6d55-4495-ae11-0792386d469c")
 	)
 	(label "BATT_SENSE"
-		(at 327.66 161.29 180)
+		(at 307.34 158.75 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11854,6 +12366,16 @@
 			(justify left bottom)
 		)
 		(uuid "f04a1b3f-42d9-42d9-8b55-ece0af496764")
+	)
+	(label "UART1_TX_RADIO"
+		(at 354.33 161.29 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f3541cb6-8e73-40b5-ab81-1955dc462cd4")
 	)
 	(label "SD_DAT1"
 		(at 148.59 76.2 180)
@@ -12450,73 +12972,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint_Flag")
-		(at 31.75 119.38 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "1a4e0594-bbd5-4fa4-a165-13fef6d918e2")
-		(property "Reference" "TP8"
-			(at 21.844 121.412 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "TestPoint_Flag"
-			(at 33.02 122.0469 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_2.0x2.0mm"
-			(at 26.67 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 26.67 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point (alternative flag-style design)"
-			(at 31.75 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3caa07f5-c1e2-42c6-a823-f846134c4065")
-		)
-		(instances
-			(project "TABv1"
-				(path "/105f6e80-8e20-4d56-8eb3-6fa826818670"
-					(reference "TP8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 68.58 29.21 0)
 		(unit 1)
@@ -12849,6 +13304,98 @@
 			(project "TABv1"
 				(path "/105f6e80-8e20-4d56-8eb3-6fa826818670"
 					(reference "#PWR098")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x10_Socket")
+		(at 26.67 132.08 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2e185e78-b2c6-4c63-b164-5b2d62061d5b")
+		(property "Reference" "J6"
+			(at 27.305 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x10_Socket"
+			(at 27.305 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "easyeda2kicad:FPC-SMD_XUNPU_FPC-0.5AD-10PB"
+			(at 26.67 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 26.67 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x10, script generated"
+			(at 26.67 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "9"
+			(uuid "d24a5299-68b7-406a-9762-49111fe46fd1")
+		)
+		(pin "1"
+			(uuid "32041d0f-de74-43fe-9128-8dd343324734")
+		)
+		(pin "6"
+			(uuid "9ceade9f-ecc5-4b93-ae6f-52db36e3eefa")
+		)
+		(pin "5"
+			(uuid "4e19445a-a110-4291-ade6-13b1679ee94a")
+		)
+		(pin "4"
+			(uuid "61285212-970f-4910-abe5-9c4ac687e6d9")
+		)
+		(pin "10"
+			(uuid "cf03d75a-618b-451b-9483-66e4abc618a1")
+		)
+		(pin "7"
+			(uuid "7fe5b86b-4532-478b-a586-ee43379bb970")
+		)
+		(pin "2"
+			(uuid "9588d8a6-b1d8-496a-a8ac-c6be1c85cf26")
+		)
+		(pin "8"
+			(uuid "31fe2921-b8bf-45fc-8fd6-95a682bc0774")
+		)
+		(pin "3"
+			(uuid "6eee5d66-f5af-4667-b60b-e1329498c4a9")
+		)
+		(instances
+			(project ""
+				(path "/105f6e80-8e20-4d56-8eb3-6fa826818670"
+					(reference "J6")
 					(unit 1)
 				)
 			)
@@ -14075,73 +14622,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint_Flag")
-		(at 31.75 124.46 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6b3ce433-1253-4001-b1e4-69a797cef98a")
-		(property "Reference" "TP10"
-			(at 21.844 126.492 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "TestPoint_Flag"
-			(at 33.02 127.1269 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_2.0x2.0mm"
-			(at 26.67 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 26.67 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point (alternative flag-style design)"
-			(at 31.75 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "719a2de5-43eb-4f1f-98c8-4536005df016")
-		)
-		(instances
-			(project "TABv1"
-				(path "/105f6e80-8e20-4d56-8eb3-6fa826818670"
-					(reference "TP10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+BATT")
 		(at 76.2 260.35 270)
 		(unit 1)
@@ -14607,73 +15087,6 @@
 			(project "TABv1"
 				(path "/105f6e80-8e20-4d56-8eb3-6fa826818670"
 					(reference "#PWR091")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint_Flag")
-		(at 31.75 127 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "87c11785-4616-49e3-8048-2a5037cf01ef")
-		(property "Reference" "TP11"
-			(at 21.844 129.032 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "TestPoint_Flag"
-			(at 33.02 129.6669 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_2.0x2.0mm"
-			(at 26.67 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 26.67 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point (alternative flag-style design)"
-			(at 31.75 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b4c53766-3c2a-4c88-81e2-f494d4516448")
-		)
-		(instances
-			(project "TABv1"
-				(path "/105f6e80-8e20-4d56-8eb3-6fa826818670"
-					(reference "TP11")
 					(unit 1)
 				)
 			)
@@ -15632,73 +16045,6 @@
 			(project "cockatiel"
 				(path "/105f6e80-8e20-4d56-8eb3-6fa826818670"
 					(reference "#PWR017")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint_Flag")
-		(at 31.75 121.92 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a648c49c-918e-4dbc-8cf0-a498e4d2fd10")
-		(property "Reference" "TP9"
-			(at 21.844 123.952 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "TestPoint_Flag"
-			(at 33.02 124.5869 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_2.0x2.0mm"
-			(at 26.67 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 26.67 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point (alternative flag-style design)"
-			(at 31.75 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8131f5f8-ba33-4f17-be13-56e95caaf46c")
-		)
-		(instances
-			(project "TABv1"
-				(path "/105f6e80-8e20-4d56-8eb3-6fa826818670"
-					(reference "TP9")
 					(unit 1)
 				)
 			)
@@ -17145,73 +17491,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint_Flag")
-		(at 31.75 129.54 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e1758ea4-9f4a-4787-9d41-fa324f602f39")
-		(property "Reference" "TP12"
-			(at 21.844 131.572 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "TestPoint_Flag"
-			(at 33.02 132.2069 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_2.0x2.0mm"
-			(at 26.67 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 26.67 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point (alternative flag-style design)"
-			(at 31.75 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "806412be-7e63-45e3-a1f0-59c8c1210e86")
-		)
-		(instances
-			(project "TABv1"
-				(path "/105f6e80-8e20-4d56-8eb3-6fa826818670"
-					(reference "TP12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 172.72 88.9 270)
 		(unit 1)
@@ -17785,8 +18064,8 @@
 		)
 	)
 	(sheet
-		(at 365.76 162.56)
-		(size 16.51 13.97)
+		(at 354.33 158.75)
+		(size 33.02 13.97)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -17801,7 +18080,7 @@
 		)
 		(uuid "41f4c21a-5a60-4aaf-8b8a-29c50dd243d1")
 		(property "Sheetname" "LoRa & GPS"
-			(at 365.76 161.8484 0)
+			(at 354.33 158.0384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17810,7 +18089,7 @@
 			)
 		)
 		(property "Sheetfile" "loRa&GPS.kicad_sch"
-			(at 365.76 177.1146 0)
+			(at 354.33 173.3046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17819,7 +18098,7 @@
 			)
 		)
 		(pin "RX_GPS" input
-			(at 382.27 165.1 0)
+			(at 387.35 161.29 0)
 			(uuid "75d1651f-75e8-4a83-be41-e47840d3ec23")
 			(effects
 				(font
@@ -17829,7 +18108,7 @@
 			)
 		)
 		(pin "TX_GPS" input
-			(at 382.27 167.64 0)
+			(at 387.35 163.83 0)
 			(uuid "4704fa85-3060-4a00-b3bc-3a639f07835b")
 			(effects
 				(font
@@ -17839,7 +18118,7 @@
 			)
 		)
 		(pin "SCL_RADIO" input
-			(at 365.76 171.45 180)
+			(at 354.33 167.64 180)
 			(uuid "d62cffe4-f0d4-4f60-b4a4-feb416e3a98e")
 			(effects
 				(font
@@ -17849,13 +18128,53 @@
 			)
 		)
 		(pin "SDA_RADIO" input
-			(at 365.76 173.99 180)
+			(at 354.33 170.18 180)
 			(uuid "a8a5bc27-3f7c-4494-ac6b-1d4041357cea")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(pin "UART1_TX_RADIO" input
+			(at 354.33 161.29 180)
+			(uuid "502badb7-8ba7-4515-9a2c-e2464ef9ffb2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "UART1_RX_RADIO" input
+			(at 354.33 163.83 180)
+			(uuid "bc430972-ed33-4b47-accd-92025e7094fb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SWDIO_RADIO" input
+			(at 387.35 167.64 0)
+			(uuid "588c7a21-f65b-4684-832d-2a061c987912")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SWCLK_RADIO" input
+			(at 387.35 170.18 0)
+			(uuid "2d7a9706-2967-439b-8e71-d9a2d03252e1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -17867,7 +18186,7 @@
 		)
 	)
 	(sheet
-		(at 327.66 170.18)
+		(at 307.34 167.64)
 		(size 17.145 7.62)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17883,7 +18202,7 @@
 		)
 		(uuid "4d929bc3-cbe5-41eb-85fb-90992c632b1e")
 		(property "Sheetname" "QSPI Flash"
-			(at 327.66 169.4684 0)
+			(at 307.34 166.9284 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17892,7 +18211,7 @@
 			)
 		)
 		(property "Sheetfile" "qspi_flash.kicad_sch"
-			(at 327.66 178.3846 0)
+			(at 307.34 175.8446 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17901,7 +18220,7 @@
 			)
 		)
 		(pin "{QSPI}" input
-			(at 327.66 172.72 180)
+			(at 307.34 170.18 180)
 			(uuid "1675e12c-34f9-4a1b-be82-d3301370d9de")
 			(effects
 				(font
@@ -18031,7 +18350,7 @@
 		)
 	)
 	(sheet
-		(at 327.66 156.21)
+		(at 307.34 153.67)
 		(size 17.145 6.985)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18047,7 +18366,7 @@
 		)
 		(uuid "9d5abf06-99d5-4fb2-96aa-935d57e25668")
 		(property "Sheetname" "Power"
-			(at 327.66 155.4984 0)
+			(at 307.34 152.9584 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18056,7 +18375,7 @@
 			)
 		)
 		(property "Sheetfile" "power.kicad_sch"
-			(at 327.66 163.7796 0)
+			(at 307.34 161.2396 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18065,7 +18384,7 @@
 			)
 		)
 		(pin "{VREG}" input
-			(at 327.66 158.75 180)
+			(at 307.34 156.21 180)
 			(uuid "5a75108b-2a86-4395-96fd-78db3fecb90f")
 			(effects
 				(font
@@ -18075,7 +18394,7 @@
 			)
 		)
 		(pin "BATT_SENSE" input
-			(at 327.66 161.29 180)
+			(at 307.34 158.75 180)
 			(uuid "755d93e0-5aa2-466b-a755-9b0b28d36a25")
 			(effects
 				(font
