@@ -1261,16 +1261,6 @@
 		)
 		(uuid "5ae5b4d1-586d-4578-b1c7-7c7804219f97")
 	)
-	(label "~{USB_BOOT}"
-		(at 66.04 46.99 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "90c5bdb0-a29d-4cfd-b1d8-1690daa3476d")
-	)
 	(label "SD1"
 		(at 69.85 73.66 0)
 		(effects
@@ -1310,6 +1300,28 @@
 			(justify left bottom)
 		)
 		(uuid "eeb914a3-722c-41b3-afdb-dc4ef5127f18")
+	)
+	(global_label "BOOTSEL"
+		(shape input)
+		(at 68.58 46.99 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6d311383-97af-4bb7-be89-76156d281eca")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 68.58 35.7196 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
 	)
 	(hierarchical_label "{QSPI}"
 		(shape input)
