@@ -21,4 +21,5 @@
   (lib (name "BC817-25")(type "KiCad")(uri "${KIPRJMOD}/lib/BC817-25/BC817-25.kicad_sym")(options "")(descr ""))
   (lib (name "TYPEC-306DDW-ARP16")(type "KiCad")(uri "${KIPRJMOD}/lib/usb_c/TYPEC-306DDW-ARP16.kicad_sym")(options "")(descr ""))
   (lib (name "BXCONN UC23-0B16F00P11")(type "KiCad")(uri "${KIPRJMOD}/lib/BXCONN_UC23-0B16F00P11/BXCONN UC23-0B16F00P11.kicad_sym")(options "")(descr ""))
+  (lib (name "easyeda2kicad_local")(type "KiCad")(uri "${KIPRJMOD}/lib/easyeda2kicad/easyeda2kicad.kicad_sym")(options "")(descr ""))
 )
