@@ -193,7 +193,8 @@
       ],
       "track_widths": [
         0.0,
-        0.125
+        0.125,
+        0.5
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -241,7 +242,47 @@
       "mpn": ""
     },
     "layer_pairs": [],
-    "layer_presets": [],
+    "layer_presets": [
+      {
+        "activeLayer": -2,
+        "flipBoard": false,
+        "layers": [
+          0,
+          2,
+          3,
+          5,
+          9,
+          11,
+          13,
+          15,
+          17,
+          19,
+          21,
+          23,
+          25
+        ],
+        "name": "Clean",
+        "renderLayers": [
+          "vias",
+          "footprint_text",
+          "footprint_anchors",
+          "grid",
+          "footprints_front",
+          "footprints_back",
+          "footprint_values",
+          "footprint_references",
+          "tracks",
+          "drc_errors",
+          "drawing_sheet",
+          "bitmaps",
+          "pads",
+          "zones",
+          "drc_warnings",
+          "locked_item_shadows",
+          "shapes"
+        ]
+      }
+    ],
     "viewports": []
   },
   "boards": [],
@@ -481,7 +522,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.125,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -492,9 +533,9 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2,
-        "via_diameter": 0.6,
-        "via_drill": 0.3,
+        "track_width": 0.125,
+        "via_diameter": 0.45,
+        "via_drill": 0.25,
         "wire_width": 6
       }
     ],
