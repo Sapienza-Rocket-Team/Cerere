@@ -7872,6 +7872,16 @@
 		)
 		(uuid "25248106-4970-446f-a9be-4ffa863f3b9a")
 	)
+	(wire
+		(pts
+			(xy 267.97 115.57) (xy 255.27 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25843f21-441f-46f3-9ab9-c2fa93a2d0fd")
+	)
 	(polyline
 		(pts
 			(xy 114.935 123.19) (xy 114.935 132.715)
@@ -8321,6 +8331,16 @@
 			(type dot)
 		)
 		(uuid "3da88fcd-a2fd-4958-99cb-075600213857")
+	)
+	(wire
+		(pts
+			(xy 267.97 110.49) (xy 255.27 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e48d74f-c5a4-411b-9176-10ba5e830531")
 	)
 	(wire
 		(pts
@@ -10494,6 +10514,16 @@
 	)
 	(wire
 		(pts
+			(xy 267.97 113.03) (xy 255.27 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e6f6cfd9-1320-42b9-9460-5a2aaba6c2af")
+	)
+	(wire
+		(pts
 			(xy 58.42 241.3) (xy 60.96 241.3)
 		)
 		(stroke
@@ -11712,6 +11742,16 @@
 		)
 		(uuid "aea19101-4dcd-4743-8bbe-3c3a8001e2e5")
 	)
+	(label "RESET"
+		(at 267.97 115.57 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b0f2ebe5-6fdb-46e4-bbd1-da2aaceb5b3a")
+	)
 	(label "SD0"
 		(at 39.37 77.47 0)
 		(effects
@@ -12096,6 +12136,28 @@
 			)
 		)
 	)
+	(global_label "BOOTSEL"
+		(shape input)
+		(at 267.97 113.03 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5624fb0a-0eec-4ccd-ad63-3e87e313bca9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 279.2404 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "PPS"
 		(shape input)
 		(at 148.59 149.86 0)
@@ -12109,6 +12171,28 @@
 		(uuid "735fb2ea-57b2-4aa9-ab61-ffd5970f2a35")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 155.3247 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "PPS"
+		(shape input)
+		(at 267.97 110.49 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7a49148a-49cf-4d21-9550-4a747642a171")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 274.7047 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13476,74 +13560,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 255.27 110.49 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3a1e3f83-5082-4259-8a20-911cf5b91a7c")
-		(property "Reference" "#PWR0143"
-			(at 261.62 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 259.08 110.4901 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 255.27 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 255.27 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 255.27 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cb9dc0e5-c653-4c6b-af8e-397e3011d849")
-		)
-		(instances
-			(project "TABv1"
-				(path "/105f6e80-8e20-4d56-8eb3-6fa826818670"
-					(reference "#PWR0143")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 266.7 242.57 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13604,74 +13620,6 @@
 			(project ""
 				(path "/105f6e80-8e20-4d56-8eb3-6fa826818670"
 					(reference "#PWR097")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 255.27 113.03 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3ea2ee83-cd79-4b8c-a032-a9ec4eba011d")
-		(property "Reference" "#PWR0142"
-			(at 261.62 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 259.08 113.0301 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 255.27 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 255.27 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 255.27 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e23a418f-6d40-4791-bfe9-33b955a1481d")
-		)
-		(instances
-			(project "TABv1"
-				(path "/105f6e80-8e20-4d56-8eb3-6fa826818670"
-					(reference "#PWR0142")
 					(unit 1)
 				)
 			)
@@ -17593,74 +17541,6 @@
 			(project "TABv1"
 				(path "/105f6e80-8e20-4d56-8eb3-6fa826818670"
 					(reference "#PWR028")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 255.27 115.57 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e91d8148-5ed3-4fb1-8b8f-1b2500bb8401")
-		(property "Reference" "#PWR0141"
-			(at 261.62 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 259.08 115.5701 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 255.27 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 255.27 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 255.27 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "87d161fe-915b-4dae-a5c5-d5a7c1e8075b")
-		)
-		(instances
-			(project "TABv1"
-				(path "/105f6e80-8e20-4d56-8eb3-6fa826818670"
-					(reference "#PWR0141")
 					(unit 1)
 				)
 			)

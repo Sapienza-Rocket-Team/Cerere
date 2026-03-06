@@ -4,4 +4,6 @@
   (lib (name "TESEO_LIV4F")(type "KiCad")(uri "${KIPRJMOD}/libs/TESEO_LIV4F")(options "")(descr ""))
   (lib (name "ul_RAK3172")(type "KiCad")(uri "${KIPRJMOD}/libs/ul_RAK3172/ul_RAK3172.pretty")(options "")(descr ""))
   (lib (name "sma_connector")(type "KiCad")(uri "${KIPRJMOD}/libs/sma_connector/sma_connector.pretty")(options "")(descr ""))
+  (lib (name "BWSMA-KE-P001")(type "KiCad")(uri "${KIPRJMOD}/libs/sma_connector_another/BWSMA-KE-P001.pretty")(options "")(descr ""))
+  (lib (name "TSB008")(type "KiCad")(uri "${KIPRJMOD}/libs/TSB008/TSB008.pretty")(options "")(descr ""))
 )

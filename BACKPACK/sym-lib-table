@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "BWSMA-KE-P001")(type "KiCad")(uri "${KIPRJMOD}/libs/sma_connector_another/BWSMA-KE-P001.kicad_sym")(options "")(descr ""))
+)
