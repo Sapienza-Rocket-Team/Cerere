@@ -173,7 +173,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector:Conn_01x03_Socket"
+		(symbol "Connector:Conn_01x06_Pin"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -182,15 +182,15 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "J"
-				(at 0 5.08 0)
+				(at 0 7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "Conn_01x03_Socket"
-				(at 0 -5.08 0)
+			(property "Value" "Conn_01x06_Pin"
+				(at 0 -10.16 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -215,7 +215,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x03, script generated"
+			(property "Description" "Generic connector, single row, 01x06, script generated"
 				(at 0 0 0)
 				(effects
 					(font
@@ -250,22 +250,76 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_01x03_Socket_1_1"
-				(polyline
-					(pts
-						(xy -1.27 2.54) (xy -0.508 2.54)
-					)
+			(symbol "Conn_01x06_Pin_1_1"
+				(rectangle
+					(start 0.8636 5.207)
+					(end 0 4.953)
 					(stroke
 						(width 0.1524)
 						(type default)
 					)
 					(fill
-						(type none)
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -4.953)
+					(end 0 -5.207)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -7.493)
+					(end 0 -7.747)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
 					)
 				)
 				(polyline
 					(pts
-						(xy -1.27 0) (xy -0.508 0)
+						(xy 1.27 5.08) (xy 0.8636 5.08)
 					)
 					(stroke
 						(width 0.1524)
@@ -277,7 +331,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 -2.54) (xy -0.508 -2.54)
+						(xy 1.27 2.54) (xy 0.8636 2.54)
 					)
 					(stroke
 						(width 0.1524)
@@ -287,10 +341,10 @@
 						(type none)
 					)
 				)
-				(arc
-					(start 0 2.032)
-					(mid -0.5058 2.54)
-					(end 0 3.048)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 0.8636 0)
+					)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -299,10 +353,10 @@
 						(type none)
 					)
 				)
-				(arc
-					(start 0 -0.508)
-					(mid -0.5058 0)
-					(end 0 0.508)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 0.8636 -2.54)
+					)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -311,10 +365,22 @@
 						(type none)
 					)
 				)
-				(arc
-					(start 0 -3.048)
-					(mid -0.5058 -2.54)
-					(end 0 -2.032)
+				(polyline
+					(pts
+						(xy 1.27 -5.08) (xy 0.8636 -5.08)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -7.62) (xy 0.8636 -7.62)
+					)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -324,7 +390,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 2.54 0)
+					(at 5.08 5.08 180)
 					(length 3.81)
 					(name "Pin_1"
 						(effects
@@ -342,7 +408,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 0 0)
+					(at 5.08 2.54 180)
 					(length 3.81)
 					(name "Pin_2"
 						(effects
@@ -360,7 +426,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -2.54 0)
+					(at 5.08 0 180)
 					(length 3.81)
 					(name "Pin_3"
 						(effects
@@ -370,6 +436,60 @@
 						)
 					)
 					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 3.81)
+					(name "Pin_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -5.08 180)
+					(length 3.81)
+					(name "Pin_5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -7.62 180)
+					(length 3.81)
+					(name "Pin_6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3295,16 +3415,6 @@
 		)
 		(uuid "152741ab-1681-43d7-89e2-10cd0cf41514")
 	)
-	(label "PYRO2"
-		(at 58.42 128.27 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "1a31ad34-0af2-4bbb-ba5c-90e4ee3d106a")
-	)
 	(label "PYRO_LOW"
 		(at 58.42 135.89 180)
 		(effects
@@ -3335,6 +3445,16 @@
 		)
 		(uuid "21cd8b13-61e2-4dc3-89c5-940da2a372a8")
 	)
+	(label "PYRO1"
+		(at 58.42 128.27 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "28947d76-264b-4977-b40c-31b12f05dd17")
+	)
 	(label "PYRO2"
 		(at 138.43 93.98 0)
 		(effects
@@ -3345,6 +3465,16 @@
 		)
 		(uuid "5b337d44-fef9-42e6-8275-fdb39a92430e")
 	)
+	(label "PYRO2"
+		(at 58.42 133.35 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "68416f64-5e09-4551-939d-d3753c68f0cd")
+	)
 	(label "PYRO3"
 		(at 58.42 138.43 180)
 		(effects
@@ -3354,16 +3484,6 @@
 			(justify right bottom)
 		)
 		(uuid "6f02dd88-6c6c-466e-b2bd-85648b71f370")
-	)
-	(label "PYRO1"
-		(at 58.42 133.35 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "7ca0abcc-9a66-4f1a-9428-9ae6fac87823")
 	)
 	(label "PYRO1"
 		(at 91.44 93.98 0)
@@ -3675,79 +3795,6 @@
 			(project "TABv1"
 				(path "/105f6e80-8e20-4d56-8eb3-6fa826818670/0e3bb754-11c8-4798-b0c5-c918ad2a10b9"
 					(reference "Q6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x03_Socket")
-		(at 73.66 130.81 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "16ce6260-cfd6-426e-beff-a431932c0227")
-		(property "Reference" "J2"
-			(at 74.93 129.5399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x03_Socket"
-			(at 74.93 132.0799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TerminalBlock_WAGO:TerminalBlock_WAGO_2601-1103_1x03_P3.50mm_Horizontal"
-			(at 73.66 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 73.66 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x03, script generated"
-			(at 73.66 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "c00f56d6-9bd4-4ea6-8735-f3840b7ce7bf")
-		)
-		(pin "2"
-			(uuid "fd32384b-60b9-4ac1-8486-ea44893edfc0")
-		)
-		(pin "1"
-			(uuid "fb7d7fb6-3727-4247-a268-03aa8e01c3c2")
-		)
-		(instances
-			(project ""
-				(path "/105f6e80-8e20-4d56-8eb3-6fa826818670/0e3bb754-11c8-4798-b0c5-c918ad2a10b9"
-					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -5571,6 +5618,89 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x06_Pin")
+		(at 73.66 133.35 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b474a9af-b1b2-4d9f-9899-bffdb2b0e860")
+		(property "Reference" "J11"
+			(at 74.93 133.3499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x06_Pin"
+			(at 74.93 135.8899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TerminalBlock_WAGO:TerminalBlock_WAGO_2601-1106_1x06_P3.50mm_Horizontal"
+			(at 73.66 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 73.66 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x06, script generated"
+			(at 73.66 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "bf87a981-a462-4fe1-b54d-b079e32a492c")
+		)
+		(pin "6"
+			(uuid "7bf60834-4402-4569-a9f0-e55aeb02e7dd")
+		)
+		(pin "1"
+			(uuid "872ae0e4-105a-4016-9dee-ea36747a7d4b")
+		)
+		(pin "3"
+			(uuid "b9ce401b-3293-44e5-b01e-dd28993ff14b")
+		)
+		(pin "4"
+			(uuid "bc6bc889-42b9-4ae9-b6a1-22ffe8a4f97c")
+		)
+		(pin "5"
+			(uuid "27ade55b-20f4-4bf2-ade8-721df07c7602")
+		)
+		(instances
+			(project ""
+				(path "/105f6e80-8e20-4d56-8eb3-6fa826818670/0e3bb754-11c8-4798-b0c5-c918ad2a10b9"
+					(reference "J11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 130.81 129.54 90)
 		(unit 1)
@@ -5973,79 +6103,6 @@
 			(project "cockatiel"
 				(path "/105f6e80-8e20-4d56-8eb3-6fa826818670/0e3bb754-11c8-4798-b0c5-c918ad2a10b9"
 					(reference "R31")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x03_Socket")
-		(at 73.66 138.43 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ec107bdd-11c2-4c78-935c-56463a7b00a3")
-		(property "Reference" "J3"
-			(at 74.93 137.1599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x03_Socket"
-			(at 74.93 139.6999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TerminalBlock_WAGO:TerminalBlock_WAGO_2601-1103_1x03_P3.50mm_Horizontal"
-			(at 73.66 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 73.66 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x03, script generated"
-			(at 73.66 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "11ebb2da-b51a-449f-aacb-e6ec884e9dd8")
-		)
-		(pin "2"
-			(uuid "6e5dfe0f-2cc5-43a1-a679-1285b31b3fce")
-		)
-		(pin "1"
-			(uuid "e2de2d5a-d8e2-4f5b-bb35-f01c2b9232ff")
-		)
-		(instances
-			(project "TABv1"
-				(path "/105f6e80-8e20-4d56-8eb3-6fa826818670/0e3bb754-11c8-4798-b0c5-c918ad2a10b9"
-					(reference "J3")
 					(unit 1)
 				)
 			)
