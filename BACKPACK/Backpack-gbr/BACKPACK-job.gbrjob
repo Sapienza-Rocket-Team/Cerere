@@ -3,9 +3,9 @@
     "GenerationSoftware": {
       "Vendor": "KiCad",
       "Application": "Pcbnew",
-      "Version": "9.0.7-1.fc42"
+      "Version": "9.0.0"
     },
-    "CreationDate": "2026-03-14T11:55:08+01:00"
+    "CreationDate": "2026-03-27T18:10:49+01:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
@@ -26,16 +26,16 @@
       "Layers": "Outer",
       "PadToPad": 0.125,
       "PadToTrack": 0.125,
-      "TrackToTrack": 0.125,
+      "TrackToTrack": 0.2,
       "MinLineWidth": 0.125
     },
     {
       "Layers": "Inner",
       "PadToPad": 0.125,
       "PadToTrack": 0.125,
-      "TrackToTrack": 0.125,
-      "TrackToRegion": 0.125,
-      "RegionToRegion": 0.125
+      "TrackToTrack": 0.2,
+      "TrackToRegion": 0.2,
+      "RegionToRegion": 0.2
     }
   ],
   "FilesAttributes": [
@@ -46,12 +46,12 @@
     },
     {
       "Path": "BACKPACK-In1_Cu.gbr",
-      "FileFunction": "Copper,L2,Inr",
+      "FileFunction": "Copper,L5,Inr",
       "FilePolarity": "Positive"
     },
     {
       "Path": "BACKPACK-In2_Cu.gbr",
-      "FileFunction": "Copper,L3,Inr",
+      "FileFunction": "Copper,L7,Inr",
       "FilePolarity": "Positive"
     },
     {
