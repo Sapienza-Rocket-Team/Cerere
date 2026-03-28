@@ -3,9 +3,9 @@
     "GenerationSoftware": {
       "Vendor": "KiCad",
       "Application": "Pcbnew",
-      "Version": "9.0.0"
+      "Version": "9.0.7+dfsg-1"
     },
-    "CreationDate": "2026-03-27T18:10:49+01:00"
+    "CreationDate": "2026-03-28T18:55:22+01:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
@@ -46,12 +46,12 @@
     },
     {
       "Path": "BACKPACK-In1_Cu.gbr",
-      "FileFunction": "Copper,L5,Inr",
+      "FileFunction": "Copper,L2,Inr",
       "FilePolarity": "Positive"
     },
     {
       "Path": "BACKPACK-In2_Cu.gbr",
-      "FileFunction": "Copper,L7,Inr",
+      "FileFunction": "Copper,L3,Inr",
       "FilePolarity": "Positive"
     },
     {
